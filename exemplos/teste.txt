@@ -1,0 +1,106 @@
+print "Ola Mundo!"
+
+int a = 1
+int b = 3
+int c
+c = a + b
+print c
+
+
+float j = 3.33
+double k = 100
+double l
+l = k / j
+print l
+
+
+int m
+input m
+long n = 9999999999
+n = m * n
+print n
+
+
+string teste1
+input teste1
+print teste1
+string teste2
+input teste2
+print teste2
+teste1 = teste1 + teste2
+print teste1
+
+
+for i in range 0 , 10 , 1
+	print "printou!"
+endFor
+
+for k in range 0 , 15 , 2
+	print k
+endFor
+
+
+int z
+z = 50 + 10
+print z
+
+
+
+if z > 100 :
+	print "z eh maior que 100"
+endIf
+
+
+
+if z <= 100 :
+	print "z eh menor ou igual a 100"
+endIf
+
+
+int media1
+int media2
+input media1
+input media2
+int media3
+media3 = media1 + media2
+media3 = media3 / 2
+print media3
+
+
+print "digite um numero e saiba se o mesmo eh primo ou nao"
+int testeprimo
+input testeprimo
+int divisoes = 0
+for i in range 2 , testeprimo , 1 :
+	if testeprimo % i == 0 :
+		divisoes = divisoes + 1
+	endIf
+endFor
+if testeprimo == 1 :
+	divisoes = 1
+endIf
+if divisoes >= 1 :
+	print "nao eh primo!"
+endIf
+if divisoes == 0 :
+	print "eh primo!"
+endIf
+
+print "digite quantos numeros da sequencia fibonacci deseja imprimir depois do segundo UM"
+int numerosfibonacci
+input numerosfibonacci
+int ant = 1
+int fibonacci = 1
+print "sequencia completa:"
+print 0
+print 1
+print 1
+for i in range 0 , numerosfibonacci , 1 :
+	fibonacci = fibonacci + ant
+	ant = fibonacci - ant
+	print fibonacci
+endFor
+
+
+
+
