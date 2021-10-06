@@ -28,17 +28,10 @@ public class FileInterpreter {
                     }
                 } 
 
-            } else if (file[i][0].equals("print")) { // Identifica se há um comando de saída de dados
-
-                boolean printed = false;
-
-                for (int k = 0; k < Services.varArray.size(); k++) { // Verifica se o que foi digitado foi um nome de váriável e busca o valor da mesma
-                    if (Services.varArray.get(k).getIdentifier().equals(file[i][1])) {
-                        System.out.println(Services.varArray.get(k).getValue());
-                        printed = true;
-                    }
-                }
-                if (!printed) {
+            } else if (file[i][0].equals("print")) { // Identifica se há um comando de saída de dados.
+                if (Services.doDetectVariable(file[i][1]) != -1) { // Verifica se o que foi digitado foi um nome de váriável e busca o valor da mesma
+                        System.out.println(Services.varArray.get(Services.doDetectVariable(file[i][1])).getValue());
+                 } else {
                     System.out.println(file[i][1]);
                 }
 
