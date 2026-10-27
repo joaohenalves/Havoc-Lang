@@ -1,102 +1,126 @@
-**Interpretador em java para a linguagem Havoc Lang**
+# Havoc-Lang — Language Manual
 
-**Alunos: João Henrique Alves e João Pedro da Rosa**
+A Java interpreter for the **Havoc-Lang** programming language.
 
+**Developers:** João Henrique Alves and João Pedro da Rosa.
 
-Para executar o interpretador, localize o arquivo "Main.jar" e digite o seguinte comando no terminal: java -jar Main.jar nomedoarquivo.txt
+## Running the Interpreter
 
-Obs: a linguagem exige que cada palavra do arquivo seja separada por no mínimo um espaço. Strings são declaradas usando aspas duplas, como em "string". Indentação de código não é obrigatória.
+Locate the `Main.jar` file and run the following command in your terminal:
 
-Uso de variáveis:
-
-Comando para declarar variáveis
-```
-tipo nome = valor
-```
-ou
-```
-tipo nome
+```bash
+java -jar Main.jar filename.txt
 ```
 
-Exemplos:
+Replace `filename.txt` with the file containing your Havoc-Lang program.
 
+**Note:** Each word in the source file must be separated by at least one space. Strings must be enclosed in double quotes, such as `"hello world"`. Code indentation is not required.
+
+## Variables
+
+To declare a variable, use:
+
+```text
+type name = value
 ```
+
+Or declare it without an initial value:
+
+```text
+type name
+```
+
+**Examples:**
+
+```text
 int x
 int y = 2
 float z = 4.4
 double w = 3.14
-string s = "string de teste"
+string s = "test string"
 ```
 
-Tipos de dados disponíveis:
+### Supported Data Types
 
- - int
- - float
- - double
- - long
- - string
- - boolean (existente no código, porém ainda não funcional)
+- `int`
+- `float`
+- `double`
+- `long`
+- `string`
+- `boolean` (present in the source code, but not yet functional)
 
-Operações:
+## Arithmetic Operations
 
-Estão disponíveis para uso as quatro operações básicas da matemática e a operação de resto.
-O máximo de operandos por expressão é de dois operandos.
+The language supports the four basic arithmetic operations (addition, subtraction, multiplication, and division), as well as the remainder operation.
 
-Exemplo:
+Each expression can contain a maximum of **two operands**.
 
-```
+**Examples:**
+
+```text
 x = 6 - 3
 y = 12 * 12
 ```
 
+## Input and Output
 
-Entrada e Saída:
+### Input
 
-Para ler dados do teclado utiliza-se o comando "input":
+Use the `input` command to read data from the keyboard:
 
-```
+```text
 int x
 input x
 ```
 
-Print:
+### Output
 
-Para saída de dados utiliza-se o comando "print":
+Use the `print` command to display output:
 
+```text
+string test
+input test
+print test
 ```
-string teste
-input teste
-print teste
-```
-Condições:
 
-if:
+## Conditional Statements
 
-A linguagem possui o comando "if", não permitindo aninhamento de ifs e não tendo a opção para o else. O bloco correspondente ao if deve terminar com um "endIf".
+### `if`
 
-Exemplos:
+The language supports `if` statements, but does not allow nested `if` statements or provide an `else` clause.
 
+Each conditional block must end with `endIf`.
 
-```
+**Examples:**
+
+```text
 if 3 > 2 :
     print true
 endIf
 ```
-```
+
+```text
 if 5 > 5 :
     print false
 endIf
 ```
 
-Laços:
+## Loops
 
-A linguagem possui o comando "for" para uso de laços, não permitindo um laço dentro de outro laço. O laço deve terminar com um "endFor".
-A variável que controlará cada iteração do laço é por padrão um "int" cujo valor é declarado na linha do comando:
+### `for`
 
-```
+The language supports `for` loops, but does not allow nested loops. Each loop must end with `endFor`.
+
+The loop control variable is an `int` by default, and its values are specified in the loop declaration:
+
+```text
 for i in range x , y , z :
-    print "printou!"
+    print "printed!"
 endFor
 ```
 
-x sendo o valor inicial do laço, y sendo o valor final do laço (y-1) e z sendo o valor a ser incrementado no laço.
+In this syntax:
+
+- `x` is the initial value of the loop.
+- `y` is the exclusive upper bound (for a step of `1`, the last value is `y - 1`).
+- `z` is the increment applied at each iteration.
