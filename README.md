@@ -1,42 +1,42 @@
-# 💻 Havoc-Lang — Interpretador de Linguagem de Programação
+# 💻 Havoc-Lang — Programming Language Interpreter
 
-Projeto desenvolvido em **Java** que implementa um interpretador para uma linguagem de programação simples, chamada **Havoc-Lang**.
+A **Java-based interpreter** for a simple programming language called **Havoc-Lang**.
 
-## 📌 Sobre o projeto
+## 📌 About the Project
 
-A Havoc-Lang é uma linguagem de programação desenvolvida com o objetivo de explorar conceitos relacionados à construção e interpretação de linguagens.
+Havoc-Lang is a programming language designed to explore fundamental concepts of programming language design and interpretation.
 
-O interpretador permite executar programas escritos na linguagem, oferecendo recursos básicos de programação.
+The interpreter executes programs written in Havoc-Lang, supporting basic programming features.
 
-## ⚙️ Funcionalidades
+## ⚙️ Features
 
-- **Variáveis:** declaração e atribuição de valores.
-- **Tipos de dados:** `int`, `float`, `double`, `long` e `string`.
-- **Operações matemáticas:** adição, subtração, multiplicação, divisão e resto.
-- **Entrada e saída:** comandos `input` e `print`.
-- **Estruturas condicionais:** comando `if`.
-- **Estruturas de repetição:** laços `for`.
+- **Variables:** Declaration and assignment.
+- **Data Types:** `int`, `float`, `double`, `long`, and `string`.
+- **Arithmetic Operations:** Addition, subtraction, multiplication, division, and modulo.
+- **Input and Output:** `input` and `print` commands.
+- **Conditional Statements:** `if` statements.
+- **Loops:** `for` loops.
 
-A linguagem possui algumas limitações, como a ausência de `else` e de suporte a estruturas condicionais e laços aninhados.
+The language has some limitations, including the absence of `else` statements and support for nested conditionals and loops.
 
-## 🚀 Como executar
+## 🚀 How to Run
 
-Com o Java instalado, execute o interpretador pelo terminal:
+With Java installed, run the interpreter from the terminal:
 
 ```bash
-java -jar Main.jar programa.txt
+java -jar Main.jar program.txt
 ```
 
-Substitua `programa.txt` pelo caminho do arquivo contendo o código escrito em Havoc-Lang.
+Replace `program.txt` with the path to a file containing Havoc-Lang code.
 
-## 📁 Estrutura do repositório
+## 📁 Repository Structure
 
-- **`fonte/`** — Código-fonte do interpretador.
-- **`exemplos/`** — Exemplos de programas escritos em Havoc-Lang.
-- **`Main.jar`** — Interpretador executável.
-- **`manual.md`** — Documentação da linguagem, incluindo sintaxe e instruções de uso.
+- **`fonte/`** — Interpreter source code.
+- **`exemplos/`** — Example programs written in Havoc-Lang.
+- **`Main.jar`** — Executable interpreter.
+- **`manual.md`** — Language documentation, including syntax and usage instructions.
 
-## 👨‍💻 Desenvolvedores
+## 👨‍💻 Developers
 
 - João Henrique Alves
 - João Pedro da Rosa
