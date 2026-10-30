@@ -36,7 +36,9 @@ Replace `program.txt` with the path to a file containing Havoc-Lang code.
 - **`Main.jar`** — Executable interpreter.
 - **`manual.md`** — Language documentation, including syntax and usage instructions.
 
-## 👨‍💻 Developers
+## Contributors
 
-- João Henrique Alves
-- João Pedro da Rosa
+This project was collaboratively developed by:
+
+- **[João Henrique Alves](https://github.com/joaohenalves)**
+- **[João Pedro da Rosa](https://github.com/JoaoPedrodaRosa)**
