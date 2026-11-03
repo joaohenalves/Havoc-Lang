@@ -1,14 +1,14 @@
-# 💻 Havoc-Lang — Programming Language Interpreter
+# Havoc-Lang — Programming Language Interpreter
 
 A **Java-based interpreter** for a simple programming language called **Havoc-Lang**.
 
-## 📌 About the Project
+## About the Project
 
 Havoc-Lang is a programming language designed to explore fundamental concepts of programming language design and interpretation.
 
 The interpreter executes programs written in Havoc-Lang, supporting basic programming features.
 
-## ⚙️ Features
+## Features
 
 - **Variables:** Declaration and assignment.
 - **Data Types:** `int`, `float`, `double`, `long`, and `string`.
@@ -19,7 +19,7 @@ The interpreter executes programs written in Havoc-Lang, supporting basic progra
 
 The language has some limitations, including the absence of `else` statements and support for nested conditionals and loops.
 
-## 🚀 How to Run
+## How to Run
 
 With Java installed, run the interpreter from the terminal:
 
@@ -29,7 +29,7 @@ java -jar Main.jar program.txt
 
 Replace `program.txt` with the path to a file containing Havoc-Lang code.
 
-## 📁 Repository Structure
+## Repository Structure
 
 - **`fonte/`** — Interpreter source code.
 - **`exemplos/`** — Example programs written in Havoc-Lang.
